@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB6194C6-5071-40AC-B422-F4E81DE52EED}|Dictionary\\Dictionary.csproj|c:\\users\\hp\\source\\repos\\tl_practice\\dictionary\\dictionary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB6194C6-5071-40AC-B422-F4E81DE52EED}|Dictionary\\Dictionary.csproj|solutionrelative:dictionary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6194C6-5071-40AC-B422-F4E81DE52EED}|Dictionary\\Dictionary.csproj|c:\\users\\hp\\source\\repos\\tl_practice\\dictionary\\dictionary\\dictionary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB6194C6-5071-40AC-B422-F4E81DE52EED}|Dictionary\\Dictionary.csproj|solutionrelative:dictionary\\dictionary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,15 +150,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dictionary.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TL_practice\\Dictionary\\Dictionary\\Dictionary.csproj",
+              "RelativeDocumentMoniker": "Dictionary\\Dictionary.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TL_practice\\Dictionary\\Dictionary\\Dictionary.csproj",
+              "RelativeToolTip": "Dictionary\\Dictionary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-02T12:33:45.31Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TL_practice\\Dictionary\\Dictionary\\Program.cs",
               "RelativeDocumentMoniker": "Dictionary\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\TL_practice\\Dictionary\\Dictionary\\Program.cs",
               "RelativeToolTip": "Dictionary\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAwAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T11:09:52.488Z",
+              "WhenOpened": "2024-07-02T12:33:27.631Z",
               "EditorCaption": ""
             }
           ]
