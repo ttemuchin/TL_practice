@@ -23,6 +23,15 @@ namespace Fighters.Models.Fighters
             _class = user_class;
             _currentHealth = GetMaxHealth();
         }
+        public Fighter( string name, IRace race, IClass user_class, IWeapon weapon, IArmor armor )
+        {
+            Name = name;
+            _race = race;
+            _class = user_class;
+            _currentHealth = GetMaxHealth();
+            SetArmor( armor );
+            SetWeapon( weapon );
+        }
 
         public int GetMaxHealth() => _race.Health + _class.Health;
         public int GetCurrentHealth() => _currentHealth;
@@ -41,6 +50,24 @@ namespace Fighters.Models.Fighters
         public int[] TakeDamage( int damage )
         {
             int newHealth;
+            var rand = new Random();
+            if ( damage == 0 )
+            {
+                return [ 0, _currentHealth, 0 ];
+            }
+            var deltaDamage = Math.Round( rand.NextDouble(), 2 );
+            if ( deltaDamage <= 0.33 )
+            { damage -= 1; }
+            else if ( deltaDamage >= 0.66 )
+            { damage += 1; }
+            var criticalDamage = Math.Round( rand.NextDouble(), 2 );
+            if ( criticalDamage <= 0.19 )
+            {
+                damage = damage * 2;
+                criticalDamage = 1;
+            }
+            else criticalDamage = 0;//to show is there crit or not 
+
             if ( damage > CalculateArmor() )
             {
                 newHealth = _currentHealth - ( damage - CalculateArmor() );
@@ -52,7 +79,8 @@ namespace Fighters.Models.Fighters
             }
             int delta = _currentHealth - newHealth;
             _currentHealth = newHealth;
-            return [ delta, newHealth ];
+
+            return [ delta, newHealth, ( int )criticalDamage ];
         }
     }
 }
