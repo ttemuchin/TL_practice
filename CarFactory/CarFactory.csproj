@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Factory\Extensions\" />
+    <Folder Include="Factory\Models\" />
+  </ItemGroup>
+
 </Project>
