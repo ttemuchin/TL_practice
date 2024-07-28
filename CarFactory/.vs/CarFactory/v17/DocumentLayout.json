@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ttemuchin4\\source\\repos\\CarFactory\\",
+  "WorkspaceRootPath": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\carfactory\\carfactory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{095AEEB1-8017-4939-AC3D-244AE58CD9D7}|CarFactory.Test\\CarFactory.Test.csproj|c:\\users\\ttemuchin4\\source\\repos\\carfactory\\carfactory.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{095AEEB1-8017-4939-AC3D-244AE58CD9D7}|CarFactory.Test\\CarFactory.Test.csproj|solutionrelative:carfactory.test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\gearboxes\\igearbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\gearboxes\\igearbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 34,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IGearbox.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Gearboxes\\IGearbox.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Gearboxes\\IGearbox.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Gearboxes\\IGearbox.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Gearboxes\\IGearbox.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:27:41.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Car.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Car.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T15:53:38.882Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -150,28 +180,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\CarFactory\\CarFactory.Test\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "CarFactory.Test\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\CarFactory\\CarFactory.Test\\UnitTest1.cs",
-              "RelativeToolTip": "CarFactory.Test\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T15:31:51.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\CarFactory\\CarFactory\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Program.cs",
               "RelativeDocumentMoniker": "CarFactory\\Program.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\CarFactory\\CarFactory\\Program.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Program.cs",
               "RelativeToolTip": "CarFactory\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T15:30:56.737Z",
+              "WhenOpened": "2024-07-28T15:43:20.36Z",
               "EditorCaption": ""
             }
           ]
