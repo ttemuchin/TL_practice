@@ -13,6 +13,8 @@ namespace CarFactory.Models
         private readonly IShape _shape;
         public string Name { get; private set; }
         public float Price { get; }
+        public float RepairPrice { get; }
+        private float RepairConst = 0.5f;
         public Car( string name, IColor color, IEngine engine, IShape shape, IGearbox gearbox )
         {
             Name = name;
@@ -21,15 +23,18 @@ namespace CarFactory.Models
             _gearbox = gearbox;
             _shape = shape;
 
-            Price = CalculatePrice( _color, _engine, _shape, _gearbox );
+            Price = color.Price + engine.Price + shape.Price + gearbox.Price;
+            RepairPrice = color.RepairPrice + engine.RepairPrice + shape.RepairPrice + gearbox.RepairPrice;
         }
 
-        public string GetAllParams() { return ""; }
-        public float CalculatePrice( IColor color, IEngine engine, IShape shape, IGearbox gearbox )
+        public string GetAllParams()
         {
-            float price = 0;
-
-            return price;
+            return $"Your uniqe model - '{Name}'\nEngine: {_engine.Engine}\nGearbox: {_gearbox.Gearbox}\nShape: {_shape.Shape}\nColor: {_color.Color}";
+        }
+        public float[] CalculatePrice()
+        {
+            float repairPrice = RepairPrice + RepairConst;
+            return [ Price, repairPrice ];
         }
     }
 }

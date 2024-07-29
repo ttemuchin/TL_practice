@@ -2,9 +2,9 @@
 
 namespace CarFactory.Models.Colors
 {
-    public class White : IEngine
+    public class White : IColor
     {
-        public string Color = "White";
+        public string Color => "White";
         public float Price => 0.3f;
         public float RepairPrice => 0.45f;
     }

@@ -1,9 +1,7 @@
-﻿/*### Требования
-Реализовать фабрику машин, которая выпускает разные марки машин с разными конфигурациями
+﻿//* От выбранной конфигурации меняется максимальная скорость и количество передач*/
+using CarFactory;
+using CarFactory.Extensions;
 
-* Должен быть вывод конфигурации в консоль
-* Конфигурировать машину можно в коде, но лучше через какой-нибудь UI (использовать библиотеки для работы с вводом в консольное приложение можно)
-* От выбранной конфигурации меняется максимальная скорость и количество передач*/
 public class Program
 {
     public static void Main( string[] args )
@@ -16,10 +14,14 @@ public class Program
             if ( Console.ReadKey( true ).Key == ConsoleKey.S )
             {
                 Console.WriteLine( "start" );
-                Console.WriteLine( "Player1, what's your name?" );
+                var config = new Configuration();
+
+                var userData = config.AskUserData();
+                var car = config.SetCarConfiguration( userData );
+                var BM = new BuildManager();
+                BM.Build( car );
 
                 Console.WriteLine( "\nWould you like to start New Build?" );
-
             }
             else
             {
@@ -29,3 +31,5 @@ public class Program
         }
     }
 }
+//Фабрика позволяет собрать свою модель и узнать её стоимость.
+//Сначала вывод конфигурации в консоль, потом считаем и показываем сумму сборки и полного ремонта
