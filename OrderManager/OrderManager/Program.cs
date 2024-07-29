@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 Greetings();
 string[] userData = DataRequest();
-Message( userData );
+Console.WriteLine(Message( userData ));
 
 static void Greetings()
 {
@@ -17,30 +17,31 @@ static string[] DataRequest()
     int userQuantity = 0;
     string productName = "";
     string userAddress = "";
-    bool flag = false;
-    while ( !flag )
+    bool isConfirmed = false;
+    while ( !isConfirmed )
     {
-        productName = ReadProductName();
+        Console.Write( "Enter the product name: " );
+        productName = ReadUserData();
         userQuantity = ReadQuantity();
-        userName = ReadUserName();
-        userAddress = ReadAddress();
-        flag = Confirm( userName, userQuantity, productName, userAddress );
+        Console.Write( "Your name: " );
+        userName = ReadUserData();
+        Console.Write( "Delivery address: " );
+        userAddress = ReadUserData();
+        isConfirmed = Confirm( userName, userQuantity, productName, userAddress );
     }
 
     string[] userData = { userName, userQuantity.ToString(), productName, userAddress };
     return userData;
 }
-
-static string ReadProductName()
+static string ReadUserData() 
 {
-    Console.Write( "Enter the product name: " );
-    string product = Console.ReadLine();
-    while ( string.IsNullOrEmpty( product ) )
+    string item = Console.ReadLine();
+    while ( string.IsNullOrEmpty( item ) )
     {
-        product = Console.ReadLine();
+        item = Console.ReadLine();
     }
-    return product;
-}
+    return item;
+}    
 static int ReadQuantity()
 {
     Console.Write( "Enter the quantity: " );
@@ -52,27 +53,7 @@ static int ReadQuantity()
     }
     return quantity;
 }
-static string ReadUserName()
-{
-    Console.Write( "Your name: " );
-    string userName = Console.ReadLine();
-    while ( string.IsNullOrEmpty( userName ) )
-    {
-        userName = Console.ReadLine();
-    }
-    return userName;
-}
-static string ReadAddress()
-{
-    Console.Write( "Delivery address: " );
-    string address = Console.ReadLine();
-    while ( string.IsNullOrEmpty( address ) )
-    {
-        address = Console.ReadLine();
-    }
-    return address;
-}
-static bool Confirm( string name, int quantity, string product, string address )
+static bool IsConfirmed( string name, int quantity, string product, string address )
 {
     Console.WriteLine( $"{name}, you ordered {product} x {quantity} to deliver to the {address}. Is everything right?" );
     Console.Write( "Write yes/no.. " );
@@ -85,11 +66,12 @@ static bool Confirm( string name, int quantity, string product, string address )
         return false;
     }
 }
-static void Message( string[] data )
+static string Message( string[] data )
 {
     Thread.Sleep( 2000 );
     DateTime date = DateTime.Today;
     date = date.AddDays( 4 );
-    Console.WriteLine( $"{data[ 0 ]}! Your order #{data[ 2 ]} - {data[ 1 ]} pieces# has been placed successfully!" +
-        $" It will be delivered to {data[ 3 ]} by {date.ToString( "d" )}" );
+    return $"{data[ 0 ]}! Your order #{data[ 2 ]} - {data[ 1 ]} pieces# has been placed successfully!\nIt will be delivered to {data[ 3 ]} by {date.ToString( "d" )}";
+    //Console.WriteLine( $"{data[ 0 ]}! Your order #{data[ 2 ]} - {data[ 1 ]} pieces# has been placed successfully!" +
+    //    $" It will be delivered to {data[ 3 ]} by {date.ToString( "d" )}" );
 }
