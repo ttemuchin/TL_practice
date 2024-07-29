@@ -7,8 +7,32 @@
       "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{095AEEB1-8017-4939-AC3D-244AE58CD9D7}|CarFactory.Test\\CarFactory.Test.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory.test\\equalpricestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095AEEB1-8017-4939-AC3D-244AE58CD9D7}|CarFactory.Test\\CarFactory.Test.csproj|solutionrelative:carfactory.test\\equalpricestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\buildmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\buildmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\colors\\pink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\colors\\pink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\engines\\pg3090.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\engines\\pg3090.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\gearboxes\\cvt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\gearboxes\\cvt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\carfactory\\carfactory\\models\\shapes\\suv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ABA0E7-839C-45BA-A8C4-0B41B29951E3}|CarFactory\\CarFactory.csproj|solutionrelative:carfactory\\models\\shapes\\suv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 39,
           "Children": [
             {
               "$type": "Bookmark",
@@ -151,12 +175,90 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EqualPricesTest.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory.Test\\EqualPricesTest.cs",
+              "RelativeDocumentMoniker": "CarFactory.Test\\EqualPricesTest.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory.Test\\EqualPricesTest.cs",
+              "RelativeToolTip": "CarFactory.Test\\EqualPricesTest.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAowBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:21:10.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pink.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Colors\\Pink.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Colors\\Pink.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Colors\\Pink.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Colors\\Pink.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:20:13.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PG3090.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Engines\\PG3090.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Engines\\PG3090.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Engines\\PG3090.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Engines\\PG3090.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:20:07.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CVT.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Gearboxes\\CVT.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Gearboxes\\CVT.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Gearboxes\\CVT.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Gearboxes\\CVT.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:19:43.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SUV.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Shapes\\SUV.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Shapes\\SUV.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Shapes\\SUV.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Shapes\\SUV.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:19:33.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "CarFactory\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Models\\Car.cs",
+              "RelativeToolTip": "CarFactory\\Models\\Car.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwCgAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:07:59.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BuildManager.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\BuildManager.cs",
               "RelativeDocumentMoniker": "CarFactory\\BuildManager.cs",
               "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\BuildManager.cs",
               "RelativeToolTip": "CarFactory\\BuildManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-28T23:40:10.838Z",
               "EditorCaption": ""
@@ -169,7 +271,7 @@
               "RelativeDocumentMoniker": "CarFactory\\Program.cs",
               "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\CarFactory\\CarFactory\\Program.cs",
               "RelativeToolTip": "CarFactory\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA4AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-28T15:43:20.36Z",
               "EditorCaption": ""

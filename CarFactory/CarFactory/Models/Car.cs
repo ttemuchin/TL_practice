@@ -29,12 +29,17 @@ namespace CarFactory.Models
 
         public string GetAllParams()
         {
-            return $"Your uniqe model - '{Name}'\nEngine: {_engine.Engine}\nGearbox: {_gearbox.Gearbox}\nShape: {_shape.Shape}\nColor: {_color.Color}";
+            return $"Your uniqe model - '{Name}'\nEngine: {_engine.Engine}\nGearbox: {_gearbox.Gearbox} with {_gearbox.NumOfGears} gears\nShape: {_shape.Shape}\nColor: {_color.Color}";
         }
         public float[] CalculatePrice()
         {
             float repairPrice = RepairPrice + RepairConst;
             return [ Price, repairPrice ];
+        }
+        public int CalculateSpeed()
+        {
+            var speed = _engine.Power * 20 + 40 - _shape.Resistance * 4;
+            return speed;
         }
     }
 }

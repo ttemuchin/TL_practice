@@ -4,6 +4,7 @@
     {
         string Name { get; }
         public float[] CalculatePrice();
+        public int CalculateSpeed();
         public string GetAllParams();
 
     }
