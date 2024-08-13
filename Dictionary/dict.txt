@@ -2,3 +2,4 @@ append:добавлять
 show:показать
 take:брать
 promote:продвигать
+collar:воротник

@@ -1,108 +1,116 @@
 ﻿using System.Text;
-const string path = @"C:\Users\hp\source\repos\TL_practice\Dictionary\dict.txt";
+using System.Xml.Linq;
 
-public static void Main( string[] args )
+public class Program
 {
-    bool active = true;
-    Console.WriteLine( "## DICTIONARY ##" );
-    Console.WriteLine( "Доступные команды: append, show, en, ru, end" );
-    while ( active )
-    {
-        var dict = OpenDictionary();
+    const string path = @"C:\Users\ttemuchin4\source\repos\TL_practice\Dictionary\dict.txt";
 
-        string cmd = Console.ReadLine();
-        if ( cmd == "append" )
+    public static void Main( string[] args )
+    {
+        bool active = true;
+        Console.WriteLine( "## DICTIONARY ##" );
+        Console.WriteLine( "Доступные команды: append, show, en, ru, end" );
+        while ( active )
         {
-            Append();
+            var dict = LoadDictFromFile();
+
+            string cmd = Console.ReadLine();
+            if ( cmd == "append" )
+            {
+                Append();
+            }
+            else if ( cmd == "show" )
+            {
+                PrintAllWords( dict );
+            }
+            else if ( cmd == "end" )
+            {
+                active = false;
+            }
+            else if ( cmd == "ru" )
+            {
+                Ru_En( dict );
+            }
+            else if ( cmd == "en" )
+            {
+                En_Ru( dict );
+            }
         }
-        else if ( cmd == "show" )
+        Console.WriteLine( "## Thank you for using our app! ##" );
+    }
+
+
+    static Dictionary<string, string> LoadDictFromFile()
+    {
+        var dict = new Dictionary<string, string>();
+
+        string line;
+        StreamReader reader = new StreamReader( path );
+        while ( ( line = reader.ReadLine() ) != null )
         {
-            ShowDict();
+            string[] en_ru = line.Split( ':' );
+            dict.Add( en_ru[ 0 ], en_ru[ 1 ] );
         }
-        else if ( cmd == "end" )
+        reader.Close();
+
+        return dict;
+    }
+
+    static void En_Ru( Dictionary<string, string> dict )
+    {
+        // с англ на рус
+        Console.Write( "Введите слово на английском языке: " );
+        string word = Console.ReadLine();
+        if ( dict.TryGetValue( word, out string translation ) )
         {
-            active = false;
+            Console.WriteLine( translation );
         }
-        else if ( cmd == "ru" )
+        else
         {
-            Ru_En();
-        }
-        else if ( cmd == "en" )
-        {
-            En_Ru();
+            Console.WriteLine( "Такого слова нет в словаре. Добавьте его!" );
         }
     }
-    Console.WriteLine( "## Thank you for using our app! ##" );
-}
-
-
-static Dictionary<string, string> OpenDictionary()
-{
-    var dict = new Dictionary<string, string>();
-
-    string line;
-    StreamReader reader = new StreamReader( path );
-    while ( ( line = reader.ReadLine() ) != null )
+    static void Ru_En( Dictionary<string, string> dict )
     {
-        string[] en_ru = line.Split( ':' );
-        dict.Add( en_ru[ 0 ], en_ru[ 1 ] );
-    }
-    reader.Close();
-
-    return dict;
-}
-
-static void En_Ru()
-{
-    // с англ на рус
-    Console.Write( "Введите слово на английском языке: " );
-    string word = Console.ReadLine();
-    Console.WriteLine( dict[ word ] );
-}
-static void Ru_En()
-{
-    // с рус на англ
-    Console.Write( "Введите слово на русском языке: " );
-    string word = Console.ReadLine();
-    bool flag = false;
-    foreach ( var (en, ru) in dict )
-    {
-        if ( word == ru )
+        // с рус на англ
+        Console.Write( "Введите слово на русском языке: " );
+        string word = Console.ReadLine();
+        bool flag = false;
+        foreach ( var (en, ru) in dict )
         {
-            Console.WriteLine( en );
-            flag = true;
+            if ( word == ru )
+            {
+                Console.WriteLine( en );
+                flag = true;
+            }
+        }
+        if ( !flag )
+        {
+            Console.WriteLine( "Кажется, такого слова в словаре ещё нет. Хотите добавить? Воспользуйтесь командой append!" );
         }
     }
-    if ( !flag )
-    {
-        Console.WriteLine( "Кажется, такого слова в словаре ещё нет. Хотите добавить? Воспользуйтесь командой append!" );
-    }
-}
 
-static void Append()
-{
-    Console.Write( "Введите слово на английском языке: " );
-    string en = Console.ReadLine();
-    Console.Write( "Введите его перевод: " );
-    string ru = Console.ReadLine();
-    string pair = en + ":" + ru;
-    
-    using TextWriter writer = new StreamWriter( path, true )
+    static void Append()
     {
-        writer.WriteLine( pair );
+        Console.Write( "Введите слово на английском языке: " );
+        string en = Console.ReadLine();
+        Console.Write( "Введите его перевод: " );
+        string ru = Console.ReadLine();
+        string pair = en + ":" + ru;
+
+        using ( TextWriter writer = new StreamWriter( path, true ) )
+        {
+            writer.WriteLine( pair );
+        }
+
     }
-    //using ( FileStream fstream = new FileStream( path, FileMode.Append, FileAccess.Write ) )
-    //using ( StreamWriter sw = new StreamWriter( fstream ) )
-    //{
-    //    sw.WriteLine( pair );
-    //}
-}
-static void ShowDict()
-{
-    int count = 0;
-    foreach ( var word in dict )
+    static void PrintAllWords( Dictionary<string, string> dict )
     {
-        count++;
-        Console.WriteLine( $"{count}.{word.Key} - {word.Value}" );
+        int count = 0;
+        foreach ( KeyValuePair<string, string> word in dict )
+        {
+            count++;
+            Console.WriteLine( $"{count}.{word.Key} - {word.Value}" );
+        }
     }
 }
