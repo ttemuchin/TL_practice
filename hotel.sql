@@ -6,10 +6,10 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Rooms')
 		room_number INT NOT NULL,
 		room_type NVARCHAR(50) NOT NULL,
 		price_per_night NVARCHAR(50) NOT NULL,
-		availability NVARCHAR(50) NOT NULL,
-		CONSTRAINT PK_room_id PRIMARY KEY (room_id)
+		availability BIT, 
+		CONSTRAINT PK_rooms_room_id PRIMARY KEY (room_id)
 		)
-
+--1 = available, 0 = not
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Customers')
 	CREATE TABLE dbo.Customers (
 		customer_id INT IDENTITY(1,1) NOT NULL,
@@ -17,7 +17,7 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Customers')
 		last_name NVARCHAR(50) NOT NULL,
 		phone_number NVARCHAR(50) NOT NULL,
 		email NVARCHAR(50) NOT NULL,
-		CONSTRAINT PK_customer_id PRIMARY KEY (customer_id)
+		CONSTRAINT PK_customers_customer_id PRIMARY KEY (customer_id)
 		)
 
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Bookings')
@@ -27,7 +27,7 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Bookings')
 		room_id INT,
 		check_in_date DATE NOT NULL,
 		check_out_date DATE NOT NULL,
-		CONSTRAINT PK_booking_id PRIMARY KEY (booking_id),
+		CONSTRAINT PK_bookings_booking_id PRIMARY KEY (booking_id),
 		FOREIGN KEY (customer_id) REFERENCES dbo.Customers(customer_id),
 		FOREIGN KEY (room_id) REFERENCES dbo.Rooms(room_id)
 		)
@@ -36,7 +36,7 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Facilities')
 	CREATE TABLE dbo.Facilities (
 		facility_id INT IDENTITY(1,1) NOT NULL, 
 		facility_name NVARCHAR(50) NOT NULL,
-		CONSTRAINT PK_facility_id PRIMARY KEY (facility_id)
+		CONSTRAINT PK_facilities_facility_id PRIMARY KEY (facility_id)
 		)
 
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='RoomsToFacilities')
@@ -46,10 +46,10 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='RoomsToFacilities')
 		PRIMARY KEY(room_id, facility_id)
 		)
 
-INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (409, N'2-person', '2 USD', N'Ready')
-INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (420, N'3-person', N'8 USD', N'Ready')
-INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (420, N'4-person', N'10 USD', N'Busy')
-INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (404, N'5-person', N'---', N'Not Found')
+INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (409, N'2-person', '2 USD', 1)
+INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (420, N'3-person', N'8 USD', 1)
+INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (420, N'4-person', N'10 USD', 0)
+INSERT INTO dbo.Rooms(room_number, room_type, price_per_night, availability) VALUES (404, N'5-person', N'---', 0)
 
 INSERT INTO dbo.Customers(first_name, last_name, phone_number, email) VALUES (N'Ivan', N'Kirilov', N'89278796523', N'paketpaketov@gmail.com')
 INSERT INTO dbo.Customers(first_name, last_name, phone_number, email) VALUES (N'Daniil', N'Gerasimov', N'89276658470', N'boss5536@gmail.com')
@@ -83,25 +83,25 @@ INSERT INTO dbo.RoomsToFacilities(room_id, facility_id) VALUES (3,4)
 INSERT INTO dbo.RoomsToFacilities(room_id, facility_id) VALUES (3,5)
 INSERT INTO dbo.RoomsToFacilities(room_id, facility_id) VALUES (3,6)
 
---все доступные номера для бронирования сегодня
+--all available rooms for booking today
 SELECT room_number FROM dbo.Rooms 
-	WHERE availability = 'Ready';
+	WHERE availability = 1;
 
---клиенты, чьи фамилии начинаются с буквы "G"
+--clients: lastname begins with "G"
 SELECT first_name, last_name FROM dbo.Customers 
 	WHERE last_name LIKE 'G%';
 
---все бронирования для определенного клиента по электронному адресу
+--all bookings on client's email
 SELECT Bookings.booking_id, Customers.email 
 	FROM Bookings JOIN Customers ON Bookings.customer_id = Customers.customer_id
 		WHERE Customers.email = 'mokoseev.artem@gmail.com';
 
---все бронирования для определенного номера
+--all booking on exact room
 SELECT Bookings.booking_id, Rooms.room_number 
 	FROM Bookings JOIN Rooms ON Bookings.room_id = Rooms.room_id
 		WHERE Rooms.room_number = '420';
 
---все номера, которые не забронированы на 28 июLя
+--all rooms for booking on July, 28
 DECLARE @the_day DATE;
 SET @the_day = '2024-07-28';
 SELECT Rooms.room_number, Bookings.check_in_date, Bookings.check_out_date
