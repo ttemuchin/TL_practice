@@ -28,9 +28,7 @@ namespace Fighters
 
                     var gameManager = new GameManager();
                     var result = gameManager.Game( player1, player2 );
-                    /*var result = gameManager.Game(
-                        new Fighter( "ARTEM", new Human(), new Knight() ),
-                        new Fighter( "VANEK-KaCHOK", new Human(), new Knight() ) );*/
+
                     Console.WriteLine( $"What a great sorrow - {result[ 1 ].Name} has fallen in battle..\n" +
                         $"{result[ 0 ].Name} stayed alive and won" );
                     Console.WriteLine( "\nWould you like to start New game?" );

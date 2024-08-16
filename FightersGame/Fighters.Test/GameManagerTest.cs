@@ -7,7 +7,7 @@ namespace Fighters.Test
     public class GameManagerTest
     {
         [Test]
-        public void Play_TwoEqualFighters_FirstFighterWins()
+        public void Game_TwoEqualFighters_FirstFighterWins()
         {
             // Arrange 
             var gameManager = new GameManager();
@@ -15,14 +15,14 @@ namespace Fighters.Test
             var fighterB = new Fighter( "FighterB", new Human() );
 
             // Act
-            var winner = gameManager.Game( fighterA, fighterB );
+            IFighter[] winner = gameManager.Game( fighterA, fighterB );
 
             // Asssert
             Assert.That( winner[ 0 ].Name, Is.EqualTo( fighterA.Name ) );
         }
 
         [Test]
-        public void Play_TwoEqualFighters_SecondFighterDies()
+        public void Game_TwoEqualFighters_SecondFighterDies()
         {
             // Arrange 
             var gameManager = new GameManager();

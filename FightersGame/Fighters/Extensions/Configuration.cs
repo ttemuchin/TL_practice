@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Fighters.Models.Armors;
+using Fighters.Models.Classes;
 using Fighters.Models.Fighters;
 using Fighters.Models.Races;
-using Fighters.Models.Fighters;
-using Fighters.Models.Classes;
 using Fighters.Models.Weapons;
-using Fighters.Models.Armors;
 
 namespace Fighters.Extensions
 {
@@ -34,31 +28,75 @@ namespace Fighters.Extensions
 
         public Fighter SetPlayerConfig( Dictionary<string, string> userData )
         {
-            var race = new Object();
-            if ( userData[ "race" ] == "dwarf" ) { race = new Dwarf(); }
-            else if ( userData[ "race" ] == "elf" ) { race = new Elf(); }
-            else if ( userData[ "race" ] == "undead" ) { race = new Undead(); }
-            else if ( userData[ "race" ] == "vampire" ) { race = new Vampire(); }
-            else { race = new Human(); }
+            IRace race = null;
+            switch ( userData[ "race" ] )
+            {
+                case "dwarf":
+                    race = new Dwarf();
+                    break;
+                case "elf":
+                    race = new Elf();
+                    break;
+                case "undead":
+                    race = new Undead();
+                    break;
+                case "vampire":
+                    race = new Vampire();
+                    break;
+                default:
+                    race = new Human();
+                    break;
+            }
 
-            var userClass = new Object();
-            if ( userData[ "class" ] == "mercenery" ) { userClass = new Mercenary(); }
-            else if ( userData[ "class" ] == "brigand" ) { userClass = new Brigand(); }
-            else { userClass = new Knight(); }
+            IClass userClass = null;
+            switch ( userData[ "class" ] )
+            {
+                case "mercenery":
+                    userClass = new Mercenary();
+                    break;
+                case "brigand":
+                    userClass = new Brigand();
+                    break;
+                default:
+                    userClass = new Knight();
+                    break;
+            }
 
-            var weapon = new Object();
-            if ( userData[ "weapon" ] == "bow" ) { weapon = new Bow(); }
-            else if ( userData[ "weapon" ] == "hammer" ) { weapon = new Hammer(); }
-            else if ( userData[ "weapon" ] == "spear" ) { weapon = new Spear(); }
-            else if ( userData[ "weapon" ] == "sword" ) { weapon = new Sword(); }
-            else { weapon = new Fists(); }
+            IWeapon weapon = null;
+            switch ( userData[ "weapon" ] )
+            {
+                case "bow":
+                    weapon = new Bow();
+                    break;
+                case "hammer":
+                    weapon = new Hammer();
+                    break;
+                case "spear":
+                    weapon = new Spear();
+                    break;
+                case "sword":
+                    weapon = new Sword();
+                    break;
+                default:
+                    weapon = new Fists();
+                    break;
+            }
 
-            var armor = new Object();
-            if ( userData[ "armor" ] == "light" ) { armor = new LightArmor(); }
-            else if ( userData[ "armor" ] == "heavy" ) { armor = new HeavyArmor(); }
-            else { armor = new NoArmor(); }
+            IArmor armor = null;
+            switch ( userData[ "armor" ] )
+            {
+                case "light":
+                    armor = new LightArmor();
+                    break;
+                case "heavy":
+                    armor = new HeavyArmor();
+                    break;
+                default:
+                    armor = new NoArmor();
+                    break;
+            }
 
-            var fighter = new Fighter( userData[ "name" ], ( IRace )race, ( IClass )userClass, ( IWeapon )weapon, ( IArmor )armor );
+            var fighter = new Fighter( userData[ "name" ], race, userClass, weapon, armor );
 
             return fighter;
         }

@@ -51,17 +51,21 @@ namespace Fighters.Models.Fighters
         {
             int newHealth;
             var rand = new Random();
+            float criticalDamageFactor = 0.19f;
+            float deltaDamageFactor = 0.33f;
+
             if ( damage == 0 )
             {
                 return [ 0, _currentHealth, 0 ];
             }
             var deltaDamage = Math.Round( rand.NextDouble(), 2 );
-            if ( deltaDamage <= 0.33 )
+            if ( deltaDamage <= deltaDamageFactor )
             { damage -= 1; }
-            else if ( deltaDamage >= 0.66 )
+            else if ( deltaDamage >= deltaDamageFactor * 2 )
             { damage += 1; }
+
             var criticalDamage = Math.Round( rand.NextDouble(), 2 );
-            if ( criticalDamage <= 0.19 )
+            if ( criticalDamage <= criticalDamageFactor )
             {
                 damage = damage * 2;
                 criticalDamage = 1;
