@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{757DC3F5-7936-4149-A51C-EC864EDBDF16}|Fighters.Test\\Fighters.Test.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\fightersgame\\fighters.test\\gamemanagertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757DC3F5-7936-4149-A51C-EC864EDBDF16}|Fighters.Test\\Fighters.Test.csproj|solutionrelative:fighters.test\\gamemanagertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\fightersgame\\fighters\\extensions\\ifighterextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|solutionrelative:fighters\\extensions\\ifighterextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\fightersgame\\fighters\\models\\fighters\\fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\fightersgame\\fighters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|solutionrelative:fighters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\fightersgame\\fighters\\extensions\\ifighterextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{228F7A5E-FA22-4442-8C02-55EF118415E9}|Fighters\\Fighters.csproj|solutionrelative:fighters\\extensions\\ifighterextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757DC3F5-7936-4149-A51C-EC864EDBDF16}|Fighters.Test\\Fighters.Test.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\fightersgame\\fighters.test\\gamemanagertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757DC3F5-7936-4149-A51C-EC864EDBDF16}|Fighters.Test\\Fighters.Test.csproj|solutionrelative:fighters.test\\gamemanagertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 37,
           "Children": [
             {
               "$type": "Bookmark",
@@ -166,20 +166,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Fighter.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters\\Models\\Fighters\\Fighter.cs",
               "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\Fighter.cs",
               "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters\\Models\\Fighters\\Fighter.cs",
               "RelativeToolTip": "Fighters\\Models\\Fighters\\Fighter.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAUwEAAAAAcAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T11:12:54.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters\\Program.cs",
               "RelativeDocumentMoniker": "Fighters\\Program.cs",
@@ -187,12 +187,11 @@
               "RelativeToolTip": "Fighters\\Program.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwBAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T11:00:19.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T11:00:19.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Configuration.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters\\Extensions\\Configuration.cs",
               "RelativeDocumentMoniker": "Fighters\\Extensions\\Configuration.cs",
@@ -200,12 +199,11 @@
               "RelativeToolTip": "Fighters\\Extensions\\Configuration.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAYwAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T06:51:37.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T06:51:37.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "IFighterExtensions.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters\\Extensions\\IFighterExtensions.cs",
               "RelativeDocumentMoniker": "Fighters\\Extensions\\IFighterExtensions.cs",
@@ -218,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters\\GameManager.cs",
               "RelativeDocumentMoniker": "Fighters\\GameManager.cs",
@@ -226,18 +224,17 @@
               "RelativeToolTip": "Fighters\\GameManager.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAYwEoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T22:35:19.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T22:35:19.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "GameManagerTest.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters.Test\\GameManagerTest.cs",
               "RelativeDocumentMoniker": "Fighters.Test\\GameManagerTest.cs",
               "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\FightersGame\\Fighters.Test\\GameManagerTest.cs",
               "RelativeToolTip": "Fighters.Test\\GameManagerTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAYAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAuwDkAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-14T22:21:29.259Z",
               "EditorCaption": ""
