@@ -15,6 +15,9 @@ namespace CarFactory.Models
         public float Price { get; }
         public float RepairPrice { get; }
         private float RepairConst = 0.5f;
+        int SpeedDecreaseConst = 4;
+        int MinSpeed = 40;
+        int EngineBoostConst = 20;
         public Car( string name, IColor color, IEngine engine, IShape shape, IGearbox gearbox )
         {
             Name = name;
@@ -38,7 +41,7 @@ namespace CarFactory.Models
         }
         public int CalculateSpeed()
         {
-            var speed = _engine.Power * 20 + 40 - _shape.Resistance * 4;
+            var speed = _engine.Power * EngineBoostConst + MinSpeed - _shape.Resistance * SpeedDecreaseConst;
             return speed;
         }
     }

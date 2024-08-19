@@ -6,10 +6,10 @@ using CarFactory.Models.Shapes;
 namespace CarFactory.Test
 {
     [TestFixture]
-    public class EqualPricesTest
+    public class BuildManagerTest
     {
         [Test]
-        public void EqualPrices()
+        public void CalculatePrice_Model1_ToBuyNewCarIsMoreExpensive()
         {
             //Arrange
             var BM = new BuildManager();
@@ -18,11 +18,11 @@ namespace CarFactory.Test
             var car = BM.Build( new Models.Car( "model", new Pink(), new PG3090(), new SUV(), new CVT() ) );
 
             //Assert
-            Assert.That( car.Price, Is.EqualTo( car.CalculatePrice()[ 1 ] ) );
+            Assert.That( car.CalculatePrice()[ 0 ], Is.GreaterThanOrEqualTo( car.CalculatePrice()[ 1 ] ) );
         }
 
         [Test]
-        public void SpeedCalcTest()
+        public void CalculateSpeed_SuvAndSedan_SedanIsFaster()
         {
             //Arrange
             var BM = new BuildManager();

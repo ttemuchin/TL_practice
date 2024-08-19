@@ -20,8 +20,8 @@ public class Program
 
                 var userData = config.AskUserData();
                 var car = config.SetCarConfiguration( userData );
-                var BM = new BuildManager();
-                BM.Build( car );
+                var buildManager = new BuildManager();
+                buildManager.Build( car );
 
                 Console.WriteLine( "\nWould you like to start New Build?" );
             }

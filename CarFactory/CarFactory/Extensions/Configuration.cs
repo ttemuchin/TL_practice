@@ -1,56 +1,93 @@
-﻿using System.Security.Cryptography;
-using System;
-using CarFactory.Models;
+﻿using CarFactory.Models;
 using CarFactory.Models.Colors;
 using CarFactory.Models.Engines;
 using CarFactory.Models.Gearboxes;
 using CarFactory.Models.Shapes;
-using System.Net.NetworkInformation;
 
 namespace CarFactory.Extensions
 {
     public class Configuration
     {
-        public Dictionary<string, string> AskUserData()
+        private string _model;
+        private string _color;
+        private string _engine;
+        private string _gearbox;
+        private string _shape;
+
+        public Configuration AskUserData()
         {
-            var userData = new Dictionary<string, string>();
+            var config = new Configuration();
             Console.WriteLine( "Choose the type of car's engine: (ggko800 or pg3090)" );
-            userData.Add( "engine", Console.ReadLine() );
+            config._engine = Console.ReadLine();
             Console.WriteLine( "Choose the gearbox: (mkpp, akpp or cvt)" );
-            userData.Add( "gearbox", Console.ReadLine() );
+            config._gearbox = Console.ReadLine();
             Console.WriteLine( "Choose the shape of car's truck: (suv, sedan or hatchback)" );
-            userData.Add( "shape", Console.ReadLine() );
+            config._shape = Console.ReadLine();
             Console.WriteLine( "Choose a color: (black, white, pink are available)" );
-            userData.Add( "color", Console.ReadLine() );
+            config._color = Console.ReadLine();
             Console.WriteLine( $"And finaly type name of the model:" );
-            userData.Add( "model", Console.ReadLine() );
+            config._model = Console.ReadLine();
             Console.WriteLine( "Successful build!" );
 
-            return userData;
+            return config;
         }
 
-        public Car SetCarConfiguration( Dictionary<string, string> userData )
+        public Car SetCarConfiguration( Configuration userData )
         {
-            var engine = new Object();
-            if ( userData[ "engine" ] == "ggko800" ) { engine = new GGKO800(); }
-            else { engine = new PG3090(); }
+            IEngine engine = null;
+            switch ( userData._engine )
+            {
+                case "ggko800":
+                    engine = new GGKO800();
+                    break;
+                default:
+                    engine = new PG3090();
+                    break;
+            }
 
-            var color = new Object();
-            if ( userData[ "color" ] == "pink" ) { color = new Pink(); }
-            else if ( userData[ "color" ] == "black" ) { color = new Black(); }
-            else { color = new White(); }
+            IColor color = null;
+            switch ( userData._color )
+            {
+                case "pink":
+                    color = new Pink();
+                    break;
+                case "black":
+                    color = new Black();
+                    break;
+                default:
+                    color = new White();
+                    break;
+            }
 
-            var shape = new Object();
-            if ( userData[ "shape" ] == "suv" ) { shape = new SUV(); }
-            else if ( userData[ "shape" ] == "sedan" ) { shape = new Sedan(); }
-            else { shape = new Hatchback(); }
+            IShape shape = null;
+            switch ( userData._shape )
+            {
+                case "suv":
+                    shape = new SUV();
+                    break;
+                case "sedan":
+                    shape = new Sedan();
+                    break;
+                default:
+                    shape = new Hatchback();
+                    break;
+            }
 
-            var gearbox = new Object();
-            if ( userData[ "gearbox" ] == "akpp" ) { gearbox = new AKPP(); }
-            else if ( userData[ "gearbox" ] == "cvt" ) { gearbox = new CVT(); }
-            else { gearbox = new MKPP(); }
+            IGearbox gearbox = null;
+            switch ( userData._gearbox )
+            {
+                case "akpp":
+                    gearbox = new AKPP();
+                    break;
+                case "cvt":
+                    gearbox = new CVT();
+                    break;
+                default:
+                    gearbox = new MKPP();
+                    break;
+            }
 
-            var car = new Car( userData[ "model" ], ( IColor )color, ( IEngine )engine, ( IShape )shape, ( IGearbox )gearbox );
+            var car = new Car( userData._model, color, engine, shape, gearbox );
             return car;
         }
     }
