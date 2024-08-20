@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\commands\\findbookingbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\commands\\findbookingbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\accommodationsprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\accommodationsprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\fixes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\fixes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\commands\\bookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\commands\\bookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\commands\\cancelbookingcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\commands\\cancelbookingcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\debug\\accomodations\\accommodations\\fixes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\fixes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 35,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,52 +158,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FindBookingByIdCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\Commands\\FindBookingByIdCommand.cs",
-              "RelativeDocumentMoniker": "Accommodations\\Commands\\FindBookingByIdCommand.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\Commands\\FindBookingByIdCommand.cs",
-              "RelativeToolTip": "Accommodations\\Commands\\FindBookingByIdCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "DocumentIndex": 2,
+              "Title": "CancelBookingCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\Commands\\CancelBookingCommand.cs",
+              "RelativeDocumentMoniker": "Accommodations\\Commands\\CancelBookingCommand.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\Commands\\CancelBookingCommand.cs",
+              "RelativeToolTip": "Accommodations\\Commands\\CancelBookingCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T13:58:30.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\Commands\\BookCommand.cs",
-              "RelativeDocumentMoniker": "Accommodations\\Commands\\BookCommand.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\Commands\\BookCommand.cs",
-              "RelativeToolTip": "Accommodations\\Commands\\BookCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T13:54:56.056Z",
+              "WhenOpened": "2024-08-20T14:32:43.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\BookingService.cs",
-              "RelativeDocumentMoniker": "Accommodations\\BookingService.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\BookingService.cs",
-              "RelativeToolTip": "Accommodations\\BookingService.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwHUAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T13:48:41.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "fixes.txt",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\fixes.txt",
               "RelativeDocumentMoniker": "Accommodations\\fixes.txt",
               "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\fixes.txt",
               "RelativeToolTip": "Accommodations\\fixes.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-08-20T13:45:42.538Z",
               "EditorCaption": ""
@@ -215,12 +185,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\BookingService.cs",
+              "RelativeDocumentMoniker": "Accommodations\\BookingService.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\BookingService.cs",
+              "RelativeToolTip": "Accommodations\\BookingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T13:48:41.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AccommodationsProcessor.cs",
               "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\AccommodationsProcessor.cs",
               "RelativeDocumentMoniker": "Accommodations\\AccommodationsProcessor.cs",
               "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Debug\\Accomodations\\Accommodations\\AccommodationsProcessor.cs",
               "RelativeToolTip": "Accommodations\\AccommodationsProcessor.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwDcAAABDAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAYwDcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:32:14.682Z",
               "EditorCaption": ""

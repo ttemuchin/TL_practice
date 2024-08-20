@@ -27,7 +27,7 @@ public class BookingService : IBookingService
         {
             throw new ArgumentException( "End date cannot be earlier than start date" );
         }
-        //i am sure we need this
+        //i am sure we need this. дата заезда не может быть больше сегодняшней даты
         if ( startDate <= DateTime.Now )
         {
             throw new ArgumentException( "Start date cannot be earlier than now date" );
@@ -92,6 +92,9 @@ public class BookingService : IBookingService
 
     private static decimal CalculateDiscount( int userId )
     {
+        //по приколу
+        if ( userId % 10 == 0 )
+        { return 0.2m; }
         return 0.1m;
     }
 
@@ -122,8 +125,7 @@ public class BookingService : IBookingService
             throw new ArgumentException( "Start date cannot be earlier than now date" );
         }
 
-        int daysBeforeArrival = ( DateTime.Now - booking.StartDate ).Days;
-
+        int daysBeforeArrival = Math.Max( ( DateTime.Now - booking.StartDate ).Days, 1 );
         return 5000.0m / daysBeforeArrival;
     }
 
@@ -143,8 +145,10 @@ public class BookingService : IBookingService
 
     private static decimal CalculateBookingCost( decimal baseRate, int days, int userId, decimal currencyRate )
     {
-        decimal cost = baseRate * days;
-        decimal totalCost = cost - cost * CalculateDiscount( userId ) * currencyRate;
+        //считаем стоимость сначала с учетом валюты, а потом вычитаем скидку
+        decimal cost = baseRate * days / currencyRate;
+        decimal totalCost = cost - cost * CalculateDiscount( userId );
+
         return totalCost;
     }
 }
