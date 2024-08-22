@@ -9,7 +9,7 @@ public class Play
     public DateTime EndDate { get; private init; }
     public decimal TicketPrice { get; set; }
     public string Description { get; set; }
-    public Theatre Theater { get; set; }
+    public Theatre Theatre { get; set; }
     public int TheatreId { get; private set; }
     public Composition Composition { get; set; }
     public int CompositionId { get; set; }

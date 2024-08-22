@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ttemuchin4\\Desktop\\Theatre\\",
+  "WorkspaceRootPath": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93317EF8-DAAA-434B-804A-89067AE6DBC5}|WebAPI\\WebAPI.csproj|c:\\users\\ttemuchin4\\desktop\\theatre\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\theatre\\infrastructure\\foundation\\configurations\\authorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\foundation\\configurations\\authorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93317EF8-DAAA-434B-804A-89067AE6DBC5}|WebAPI\\WebAPI.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\theatre\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93317EF8-DAAA-434B-804A-89067AE6DBC5}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|c:\\users\\ttemuchin4\\desktop\\theatre\\infrastructure\\foundation\\theatredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\theatre\\infrastructure\\foundation\\theatredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\foundation\\theatredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|c:\\users\\ttemuchin4\\source\\repos\\tl_practice\\theatre\\infrastructure\\foundation\\configurations\\compositionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F28E163-F83E-4E55-8C29-903B6C60A379}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\foundation\\configurations\\compositionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,26 +158,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TheatreDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\Desktop\\Theatre\\Infrastructure\\Foundation\\TheatreDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Foundation\\TheatreDbContext.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\Desktop\\Theatre\\Infrastructure\\Foundation\\TheatreDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Foundation\\TheatreDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "DocumentIndex": 0,
+              "Title": "AuthorConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\Infrastructure\\Foundation\\Configurations\\AuthorConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Foundation\\Configurations\\AuthorConfiguration.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\Infrastructure\\Foundation\\Configurations\\AuthorConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Foundation\\Configurations\\AuthorConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T12:28:44.848Z",
+              "WhenOpened": "2024-08-22T08:12:43.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "CompositionConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\Infrastructure\\Foundation\\Configurations\\CompositionConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Foundation\\Configurations\\CompositionConfiguration.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\Infrastructure\\Foundation\\Configurations\\CompositionConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Foundation\\Configurations\\CompositionConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T19:45:34.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TheatreDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\Infrastructure\\Foundation\\TheatreDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Foundation\\TheatreDbContext.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\Infrastructure\\Foundation\\TheatreDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Foundation\\TheatreDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:28:44.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ttemuchin4\\Desktop\\Theatre\\WebAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\ttemuchin4\\Desktop\\Theatre\\WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ttemuchin4\\source\\repos\\TL_practice\\Theatre\\WebAPI\\Program.cs",
               "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T12:15:51.021Z",
               "EditorCaption": ""

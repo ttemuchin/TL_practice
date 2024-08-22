@@ -14,6 +14,6 @@ public class Author
         }
         Name = name;
         DateOfBirth = dateOfBirth;
-        
+
     }
 }

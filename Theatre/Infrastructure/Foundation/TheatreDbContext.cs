@@ -8,15 +8,12 @@ public class TheatreDbContext : DbContext
         : base( options )
     { }
 
-    #region DbSets
-
-    public DbSet<Theatre> Theatres { get; set; }
-    public DbSet<Play> Plays { get; set; }
-    public DbSet<Author> Authors { get; set; }
-    public DbSet<Composition> Compositions { get; set; }
-    public DbSet<Hours> Hours { get; set; }
-
-    #endregion
+    //Sets
+    protected override void OnConfiguring( DbContextOptionsBuilder optionsBuilder )
+    {
+        base.OnConfiguring( optionsBuilder );
+        optionsBuilder.UseSqlServer( "Server=localhost\\SQLExpress;Database=Theatre;TrustedConnection=True;TrustedServerSertificate=True;" );
+    }
 
     protected override void OnModelCreating( ModelBuilder modelBuilder )
     {
