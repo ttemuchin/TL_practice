@@ -106,4 +106,5 @@ DECLARE @the_day DATE;
 SET @the_day = '2024-07-28';
 SELECT Rooms.room_number, Bookings.check_in_date, Bookings.check_out_date
 	FROM Rooms JOIN Bookings ON Bookings.room_id = Rooms.room_id
-		WHERE Bookings.check_in_date > @the_day OR Bookings.check_out_date < @the_day;
+		WHERE Bookings.check_in_date > @the_day OR Bookings.check_out_date < @the_day 
+		OR NOT(Bookings.check_in_date < @the_day AND Bookings.check_out_date > @the_day) ;
