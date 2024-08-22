@@ -24,6 +24,17 @@ public class Play
         TheatreId = teatreId;
         CompositionId = compositionId;
     }
+    public Play( int id, string name, string description, DateTime startDate, DateTime endDate, decimal price, int teatreId, int compositionId )
+    {
+        Id = id;
+        Name = name;
+        Description = description;
+        StartDate = startDate;
+        EndDate = endDate;
+        TicketPrice = price;
+        TheatreId = teatreId;
+        CompositionId = compositionId;
+    }
 
     public override string ToString()
     {

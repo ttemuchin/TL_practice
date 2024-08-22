@@ -17,7 +17,7 @@ public class TheatreDbContext : DbContext
 
     protected override void OnConfiguring( DbContextOptionsBuilder optionsBuilder )
     {
-        //base.OnConfiguring( optionsBuilder );
+        base.OnConfiguring( optionsBuilder );
         if ( !optionsBuilder.IsConfigured ) // Проверка настройки через DI
         {
             optionsBuilder.UseSqlServer( "Server=localhost\\SQLEXPRESS01;Database=Theatre;Trusted_Connection=true;TrustServerCertificate=True;" );

@@ -7,19 +7,16 @@ try
     var connectionString = builder.Configuration.GetConnectionString( "MSSQLSpotlight" );
     builder.Services.AddDbContext<TheatreDbContext>( options =>
     {
-        options.UseSqlServer( connectionString, b => b.MigrationsAssembly( "Infrastructure.Migrations" ) );
+        options.UseSqlServer( connectionString, b => b.MigrationsAssembly( typeof( TheatreDbContext ).Assembly.FullName ) );//"Infrastructure.Migrations"
     } );
 
-    /*builder.Services
-        .AddApplication()
-        .AddInfrastructure();*/
+    //builder.Services.AddApplication().AddInfrastructure();
 
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
-    var app = builder.Build();
-
+    WebApplication app = builder.Build();
     if ( app.Environment.IsDevelopment() )
     {
         app.UseSwagger();
