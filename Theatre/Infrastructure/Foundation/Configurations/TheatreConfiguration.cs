@@ -46,7 +46,7 @@ namespace Infrastructure.Foundation.Configurations
                 .IsRequired();
 
             builder.HasMany( t => t.Plays )
-                .WithOne( p => p.Theater )
+                .WithOne( p => p.Theatre )
                 .HasForeignKey( p => p.TheatreId )
                 .OnDelete( DeleteBehavior.Cascade );
 
