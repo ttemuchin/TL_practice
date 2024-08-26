@@ -5,6 +5,14 @@ export type Card = {
 };
 
 export const createCard = (dictionary: Card[], newCard: Card): Card[] => {
+  if (
+    newCard.rusWord === "" ||
+    newCard.gerWord === "" ||
+    (dictionary.some((c) => c.rusWord === newCard.rusWord) && dictionary.some((c) => c.gerWord === newCard.gerWord))
+  ) {
+    return [...dictionary];
+  }
+
   return [...dictionary, newCard];
 };
 
