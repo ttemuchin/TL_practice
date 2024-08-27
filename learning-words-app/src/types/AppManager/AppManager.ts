@@ -1,5 +1,5 @@
-import { GroupOfCards } from "../GroupOfCards/GroupOfCards.model";
-import { Card } from "../Card/Card.model";
+import { GroupOfCards } from "../GroupOfCards/GroupOfCards";
+import { Card } from "../Card/Card";
 
 export type AppManager = {
   groups: GroupOfCards[];
@@ -9,7 +9,7 @@ export type AppManager = {
 
 export const displayDictionary = (dict: Card[]) => {
   dict.map((card) => {
-    console.log(card.rusWord, card.gerWord);
+    console.log(card.rusWord, card.translation);
   });
 };
 export const showGroups = (groups: GroupOfCards[]) => {
@@ -18,7 +18,7 @@ export const showGroups = (groups: GroupOfCards[]) => {
   });
 };
 
-export const chooseGroup = (appManager: AppManager, groupId: number): AppManager => {
+export const chooseGroup = (appManager: AppManager, groupId: string): AppManager => {
   const choosedGroup: GroupOfCards | undefined = appManager.groups.find((g) => g.id === groupId);
 
   if (choosedGroup) {

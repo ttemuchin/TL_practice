@@ -1,8 +1,8 @@
-import { Card } from "./Card.model";
+import { Card } from "./Card";
 
 describe("", () => {
   describe("createCard", () => {
-    const word1: Card = { id: 1, rusWord: "работать", gerWord: "arbeiten" };
+    const word1: Card = { id: "1", rusWord: "работать", translation: "arbeiten" };
 
     it("returns collection with added Card element", () => {
       expect(Card.createCard([], word1)).toEqual([word1]);
@@ -17,7 +17,7 @@ describe("", () => {
     });
     it("can not append a card with empty values", () => {
       expect(Card.createCard([], { ...word1, rusWord: "" })).toEqual([]);
-      expect(Card.createCard([], { ...word1, gerWord: "" })).toEqual([]);
+      expect(Card.createCard([], { ...word1, translation: "" })).toEqual([]);
     });
   });
 });
