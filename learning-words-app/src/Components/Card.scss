@@ -10,67 +10,25 @@
   text-align: center;
   color: black;
   font-size: 24px;
-  perspective: 1000px; /* Create 3D effect */
-  position: absolute; /* Centering */
+  perspective: 1000px;
+  position: absolute; /* !!! */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.6s; /* Animation */
+  transition: transform 0.6s; /* for animation */
 }
 
 .card.flipped {
-  transform: translate(-50%, -50%) rotateY(360deg); /* Flip effect */
+  transform: translate(-50%, -50%) rotateY(360deg);
 }
 
 .card-content {
-  backface-visibility: hidden; /* Hide back face */
+  backface-visibility: hidden;
 }
 .card-content.flipped {
-  /* This class is added based on state to control visibility */
-  display: none; /* Hide content when flipped */
+  /* показываем или не показываем контент  */
+  display: none;
 }
-
 .card-content:not(.flipped) {
-  display: block; /* Show content initially */
+  display: block;
 }
-// .card-container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-// }
-
-// .card {
-//   width: 200px;
-//   height: 300px;
-//   background-color: lightgray;
-//   border: 2px solid darkgray;
-//   border-radius: 10px;
-//   perspective: 1000px;
-//   transition: transform 0.6s;
-// }
-
-// .card-front,
-// .card-back {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   backface-visibility: hidden;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 24px;
-//   color: black;
-// }
-
-// .card-front {
-//   z-index: 2;
-// }
-
-// .card-back {
-//   transform: rotateY(180deg);
-// }
-
-// .card.flipped {
-//   transform: rotateY(180deg);
-// }
