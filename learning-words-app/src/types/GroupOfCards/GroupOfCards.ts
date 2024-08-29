@@ -6,9 +6,18 @@ export type GroupOfCards = {
   cards: Card[];
 };
 
-export const createGroup = (groups: GroupOfCards[], group: GroupOfCards): GroupOfCards => {
-  groups = [...groups, group];
-  return group;
+export const createGroup = (
+  groups: GroupOfCards[],
+  cardId: string,
+  cardName: string,
+  selectedCards: Card[],
+): GroupOfCards[] => {
+  if (cardId !== "" && cardName !== "") {
+    const group: GroupOfCards = { id: cardId, name: cardName, cards: selectedCards };
+    groups = [...groups, group];
+    return groups;
+  }
+  return groups;
 };
 
 export const editGroup = (group: GroupOfCards, rename: string): GroupOfCards => {

@@ -2,6 +2,25 @@ import { Card } from "../Card/Card";
 import { GroupOfCards } from "./GroupOfCards";
 
 describe("", () => {
+  describe("createCard", () => {
+    const group1: GroupOfCards = { id: "1", name: "favorites", cards: [] };
+    const group2: GroupOfCards = { id: "2", name: "start learning german", cards: [] };
+    // eslint-disable-next-line prefer-const
+    let allGroups: GroupOfCards[] = [group1, group2];
+
+    it("creates new group", () => {
+      expect(GroupOfCards.createGroup(allGroups, "3", "new one", [])).toContainEqual({
+        id: "3",
+        name: "new one",
+        cards: [],
+      });
+    });
+    it("doesnt create a group with empty id or name", () => {
+      expect(GroupOfCards.createGroup(allGroups, "", "new one", []).at(-1)).toEqual(group2);
+      expect(GroupOfCards.createGroup(allGroups, "3", "", []).at(-1)).toEqual(group2);
+    });
+  });
+
   describe("getGroupById", () => {
     const group1: GroupOfCards = { id: "1", name: "favorites", cards: [] };
     const group2: GroupOfCards = { id: "2", name: "start learning german", cards: [] };
