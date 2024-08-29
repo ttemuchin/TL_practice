@@ -1,0 +1,46 @@
+.learning-process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.know-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  //border: none;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  background-color: green;
+  color: white;
+}
+
+.know-button:hover {
+  background-color: darkgreen;
+}
+
+.unknown-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  background-color: red;
+  color: white;
+}
+
+.unknown-button:hover {
+  background-color: darkred;
+}

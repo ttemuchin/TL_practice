@@ -1,35 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import tglogo from "./assets/Telegram_logo.svg";
 import "./App.css";
+import LearningProcess from "./Components/LearningProcess";
+import { GroupOfCards } from "./types/GroupOfCards/GroupOfCards";
+
+const group1: GroupOfCards = {
+  id: "1",
+  name: "Время суток",
+  cards: [
+    { id: "1", rusWord: "День", translation: "Tag" },
+    { id: "2", rusWord: "Ночь", translation: "Nacht" },
+    { id: "3", rusWord: "Вечер", translation: "Abend" },
+    { id: "3", rusWord: "Утро", translation: "Morgen" },
+  ],
+};
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+      <a href="https://t.me/ttemuchin4">
+        <img src={tglogo} className="logo" alt="telegram logo" />
+      </a>
       <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <LearningProcess cards={group1.cards}></LearningProcess>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          onClick={() => {
-            setCount((count) => count + 1);
-          }}
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
   );
 }

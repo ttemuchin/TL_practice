@@ -1,0 +1,34 @@
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: lightgray;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  perspective: 1000px;
+  position: absolute; /* !!! */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s; /* for animation */
+}
+
+.card.flipped {
+  transform: translate(-50%, -50%) rotateY(360deg);
+}
+
+.card-content {
+  backface-visibility: hidden;
+}
+.card-content.flipped {
+  /* показываем или не показываем контент  */
+  display: none;
+}
+.card-content:not(.flipped) {
+  display: block;
+}
