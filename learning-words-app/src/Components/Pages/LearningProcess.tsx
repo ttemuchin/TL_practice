@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import { Card as CardType } from "../types/Card/Card";
-import { LearningProcess as LP } from "../types/LearningProcess/LearningProcess";
+import Card from "../Card/Card";
+import { Card as CardType } from "../../types/Card/Card";
+import { LearningProcess as LP } from "../../types/LearningProcess/LearningProcess";
 import "./LearningProcess.scss";
 
 const LearningProcess: React.FC<{ cards: CardType[] }> = ({ cards }) => {
