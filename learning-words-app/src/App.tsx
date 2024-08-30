@@ -1,6 +1,7 @@
-import tglogo from "./assets/Telegram_logo.svg";
+//import tglogo from "./assets/Telegram_logo.svg";
 import "./App.css";
 import LearningProcess from "./Components/LearningProcess";
+import Menu from "./Components/Menu";
 import { GroupOfCards } from "./types/GroupOfCards/GroupOfCards";
 
 const group1: GroupOfCards = {
@@ -17,9 +18,10 @@ const group1: GroupOfCards = {
 function App() {
   return (
     <>
-      <a href="https://t.me/ttemuchin4">
+      {/* <a href="https://t.me/ttemuchin4">
         <img src={tglogo} className="logo" alt="telegram logo" />
-      </a>
+      </a> */}
+      <Menu></Menu>
       <div>
         <LearningProcess cards={group1.cards}></LearningProcess>
       </div>
