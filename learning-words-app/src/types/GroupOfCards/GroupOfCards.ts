@@ -6,17 +6,16 @@ export type GroupOfCards = {
   cards: Card[];
 };
 
-export const createGroup = (
-  groups: GroupOfCards[],
-  cardId: string,
-  cardName: string,
-  selectedCards: Card[],
-): GroupOfCards[] => {
+export const createGroup = (cardId: string, cardName: string, selectedCards: Card[]): GroupOfCards | undefined => {
   if (cardId !== "" && cardName !== "") {
-    const group: GroupOfCards = { id: cardId, name: cardName, cards: selectedCards };
-    groups = [...groups, group];
-    return groups;
+    return { id: cardId, name: cardName, cards: selectedCards };
   }
+  return undefined;
+};
+
+export const addGroupToList = (groups: GroupOfCards[], group: GroupOfCards): GroupOfCards[] => {
+  //groups = [...groups, group];
+  groups.push(group);
   return groups;
 };
 
@@ -44,4 +43,4 @@ export const getGroupById = (groups: GroupOfCards[], id: string): GroupOfCards |
   return groups.find((group) => group.id === id);
 };
 
-export const GroupOfCards = { createGroup, editGroup, deleteGroup, getGroupById, chooseCards };
+export const GroupOfCards = { createGroup, addGroupToList, editGroup, deleteGroup, getGroupById, chooseCards };
