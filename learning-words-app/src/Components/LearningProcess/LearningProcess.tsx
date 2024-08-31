@@ -27,7 +27,7 @@ const LearningProcess: React.FC<{ cards: CardType[] }> = ({ cards }) => {
   return (
     <div className="learning-process">
       {currentCards.length > 0 && <Card card={currentCards[0]} showTranslation={showTranslation} />}
-      <div className="buttons">
+      <div className="lp-buttons">
         <button onClick={() => void handleKnow()} className="know-button">
           Знаю
         </button>

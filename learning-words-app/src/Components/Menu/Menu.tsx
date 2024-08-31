@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Menu.scss";
-import tglogo from "../assets/Telegram_logo.svg";
+import tglogo from "../../assets/Telegram_logo.svg";
 import logo from "/favicon.png";
 
 const Menu = () => {
