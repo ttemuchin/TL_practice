@@ -1,4 +1,3 @@
-//import tglogo from "./assets/Telegram_logo.svg";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LearningProcess from "./Components/Pages/LearningProcess";
@@ -21,9 +20,6 @@ const group1: GroupOfCards = {
 function App() {
   return (
     <>
-      {/* <a href="https://t.me/ttemuchin4">
-        <img src={tglogo} className="logo" alt="telegram logo" />
-      </a> */}
       <Menu></Menu>
       <Routes>
         <Route path="/" element={<MainPage />} />

@@ -20,7 +20,7 @@ const NotFoundPage: React.FC = () => {
 
   return (
     <>
-      <div>Page not found</div>
+      <div>Page not found, redirect to main</div>
     </>
   );
 };

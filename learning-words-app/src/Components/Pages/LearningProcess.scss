@@ -5,7 +5,7 @@
 }
 
 .buttons {
-  position: absolute;
+  position: fixed;
   top: 33em;
   left: 40em;
 }
@@ -16,7 +16,7 @@
   padding: 10px 20px;
   margin: 5px;
   font-size: 17px;
-  border-color: black;
+  border-color: rgb(30, 30, 30);
   border-width: 3px;
   border-radius: 5px;
   cursor: pointer;
@@ -27,17 +27,17 @@
 }
 
 .know-button {
-  @include answer-button($color: rgb(37, 134, 5));
+  @include answer-button($color: #f13c20);
   &:hover {
-    background-color: rgb(36, 112, 11);
-    border-color: rgb(30, 30, 30);
+    background-color: #b40101;
+    border-color: rgb(48, 48, 48);
   }
 }
 
 .unknown-button {
-  @include answer-button($color: #a11616);
+  @include answer-button($color: #f13c20);
   &:hover {
-    background-color: rgb(118, 16, 16);
-    border-color: rgb(30, 30, 30);
+    background-color: #f13c20b3;
+    border-color: rgb(48, 48, 48);
   }
 }

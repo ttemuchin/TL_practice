@@ -1,15 +1,24 @@
 import { Link } from "react-router-dom";
 import "./Menu.scss";
+import tglogo from "../assets/Telegram_logo.svg";
+import logo from "/favicon.png";
 
 const Menu = () => {
   return (
     <div className="menu">
       <div className="menu-items">
-        <Link to="/">Main</Link>
-        <Link to="/learn">Learning</Link>
-        {/* <a href="#item1" className="menu-item"></a> */}
-        {/* <a href="#item2" className="menu-item"></a>
-        <a href="#item3" className="menu-item"></a> */}
+        <img className="menu-icon" src={logo} alt="logo"></img>
+
+        <Link to="/" className="menu-link">
+          Main
+        </Link>
+        <Link to="/learn" className="menu-link">
+          Learning
+        </Link>
+
+        <a href="https://t.me/ttemuchin4" className="menu-tglink">
+          <img src={tglogo} alt="telegram logo" />
+        </a>
       </div>
     </div>
   );
