@@ -1,32 +1,39 @@
 import React from "react";
 import "./MainPage.scss";
-import Word from "../Word/Word";
+import Dictionary from "../Dictionary/Dictionary";
+import GroupList from "../GroupList/GroupList";
 import { useState } from "react";
-import { Card } from "../../types/Card/Card";
 
 const MainPage: React.FC = () => {
-  const [cards, setCards] = useState<Card[]>([
-    { id: "1", rusWord: "ru1", translation: "ger1" },
-    { id: "2", rusWord: "ru2", translation: "ger2" },
-  ]);
+  const [showDictionary, setShowDictionary] = useState(false);
+  const [showGroups, setShowGroups] = useState(false);
 
-  const handleEdit = (updatedCard: Card) => {
-    const newCards = cards.map((card) => (card.id === updatedCard.id ? updatedCard : card));
-    setCards(newCards);
+  const toggleDictionary = () => {
+    setShowDictionary((state) => !state);
+    setShowGroups(false);
   };
 
-  const handleDelete = (cardId: string) => {
-    const newCards = Card.dropCard(cards, cardId);
-    setCards(newCards);
+  const toggleGroups = () => {
+    setShowGroups((state) => !state);
+    setShowDictionary(false);
   };
 
   return (
     <>
-      <div className="main-page"></div>
-      {/* <Word card={{ id: "1", rusWord: "я", translation: "ich" }}></Word> */}
-      {cards.map((card) => (
-        <Word key={card.id} card={card} onEdit={handleEdit} onDelete={handleDelete} />
-      ))}
+      {/* <div className="main-page"></div>
+      <Dictionary /> */}
+      <div className="page-container">
+        <div className="button-container">
+          <button className="main-button" onClick={toggleDictionary}>
+            Dictionary
+          </button>
+          <button className="main-button" onClick={toggleGroups}>
+            Groups
+          </button>
+        </div>
+        {showDictionary && <Dictionary />}
+        {showGroups && <GroupList />}
+      </div>
     </>
   );
 };
