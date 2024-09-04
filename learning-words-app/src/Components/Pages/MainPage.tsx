@@ -1,38 +1,26 @@
 import React from "react";
 import "./MainPage.scss";
-import Dictionary from "../Dictionary/Dictionary";
-import GroupList from "../GroupList/GroupList";
-import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const MainPage: React.FC = () => {
-  const [showDictionary, setShowDictionary] = useState(false);
-  const [showGroups, setShowGroups] = useState(false);
+  // const [showButtons, setShowButtons] = useState(true);
 
-  const toggleDictionary = () => {
-    setShowDictionary((state) => !state);
-    setShowGroups(false);
-  };
-
-  const toggleGroups = () => {
-    setShowGroups((state) => !state);
-    setShowDictionary(false);
-  };
+  // const removeButtons = () => {
+  //   setShowButtons(false);
+  // }; не нужная штука(( но как обновить стейт.. из словаря идем на мейн, setShowButtons(true)
 
   return (
     <>
-      {/* <div className="main-page"></div>
-      <Dictionary /> */}
       <div className="page-container">
         <div className="button-container">
-          <button className="main-button" onClick={toggleDictionary}>
-            Dictionary
-          </button>
-          <button className="main-button" onClick={toggleGroups}>
-            Groups
-          </button>
+          <Link to="dictionary">
+            <button className="main-button">Dictionary</button>
+          </Link>
+          <Link to="groups">
+            <button className="main-button">Groups</button>
+          </Link>
         </div>
-        {showDictionary && <Dictionary />}
-        {showGroups && <GroupList />}
+        <Outlet />
       </div>
     </>
   );

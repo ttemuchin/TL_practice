@@ -21,8 +21,11 @@ const Word: React.FC<WordProps> = ({ card, onEdit, onDelete }) => {
     setShowButtons(true);
   };
 
+  //наверно надо асинх
   const handleMouseLeave = () => {
     setIsHovered(false);
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    setTimeout(() => {}, 2500); //костыль.. и притом даже не рабочий
     setTimeout(() => {
       if (!isEditing) {
         setShowButtons(false);

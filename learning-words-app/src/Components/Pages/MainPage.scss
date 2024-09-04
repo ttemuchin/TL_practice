@@ -1,20 +1,9 @@
-// div {
-//   text-align: center;
-// }
-// .main-page {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-// }
-
-// refactor all of it after routing
-
 .page-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  height: 100vh;
+  margin-top: 40px;
   margin-left: 40vw;
 }
 
