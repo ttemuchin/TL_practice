@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainPage.scss";
+import styles from "./MainPage.module.scss";
 import { Link, Outlet } from "react-router-dom";
 
 const MainPage: React.FC = () => {
@@ -11,13 +11,13 @@ const MainPage: React.FC = () => {
 
   return (
     <>
-      <div className="page-container">
-        <div className="button-container">
+      <div className={styles.pageContainer}>
+        <div className={styles.buttonContainer}>
           <Link to="dictionary">
-            <button className="main-button">Dictionary</button>
+            <button className={styles.mainButtons}>Dictionary</button>
           </Link>
           <Link to="groups">
-            <button className="main-button">Groups</button>
+            <button className={styles.mainButtons}>Groups</button>
           </Link>
         </div>
         <Outlet />

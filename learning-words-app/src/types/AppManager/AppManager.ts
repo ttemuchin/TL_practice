@@ -4,7 +4,7 @@ import { Card } from "../Card/Card";
 export type AppManager = {
   groups: GroupOfCards[];
   dictionary: Card[];
-  choosedGroup: GroupOfCards;
+  choosedGroup: GroupOfCards | undefined;
 };
 
 export const displayDictionary = (dict: Card[]) => {

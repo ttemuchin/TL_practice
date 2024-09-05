@@ -6,8 +6,9 @@ import "./Dictionary.scss";
 
 const Dictionary: React.FC = () => {
   const [cards, setCards] = useState<Card[]>([
-    { id: "1", rusWord: "ru1", translation: "ger1" },
-    { id: "2", rusWord: "ru2", translation: "ger2" },
+    { id: "1", rusWord: "Работать", translation: "Arbeiten" },
+    { id: "2", rusWord: "Пахать", translation: "Pflügen" },
+    { id: "3", rusWord: "", translation: "" },
   ]);
 
   const handleEdit = (updatedCard: Card) => {
